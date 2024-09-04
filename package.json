@@ -1,6 +1,6 @@
 {
-  "name": "carrito-compras",
-  "version": "0.0.0",
+  "name": "carrito-xcompras",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
