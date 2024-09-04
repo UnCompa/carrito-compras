@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PageComponent } from './home/page/page.component';
 
@@ -10,5 +10,5 @@ import { PageComponent } from './home/page/page.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'carrito-compras';
+
 }
