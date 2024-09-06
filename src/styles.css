@@ -3,6 +3,5 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  color: white;
   font-family: "Raleway", sans-serif;
 }

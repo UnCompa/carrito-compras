@@ -1,0 +1,26 @@
+<section
+  class="grid gap-4 pt-4 container mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center w-full text-black font-Nunito"
+>
+  @for(producto of products; track producto.id) {
+  <div
+    class="p-2 rounded-lg h-full w-full flex justify-center flex-col items-center"
+  >
+    <div
+      class="bg-zinc-50 rounded-lg shadow-xl p-4 h-full w-full grid place-content-center"
+    >
+      <div class="flex w-full justify-center items-center">
+        <img
+          class="w-44 max-h-52 object-contain"
+          src="{{ producto.image }}"
+          alt=""
+        />
+      </div>
+      <h2 class="text-xl text-blue-600 font-black font-Nunito">
+        {{ producto.price }}
+      </h2>
+      <h3 class="font-bold text-lg my-2 w-full">{{ producto.title }}</h3>
+      <p class="truncate">{{ producto.description }}</p>
+    </div>
+  </div>
+  }
+</section>
