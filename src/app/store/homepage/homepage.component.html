@@ -1,5 +1,10 @@
-<main class="min-h-screen bg-zinc-100">
+<main class="min-h-screen bg-gradient-to-br from-zinc-50 via-green-100 to-teal-100 overflow-auto">
   <app-navbar />
- 
-<app-list-products />
+  @defer () {
+  <app-list-products />
+  } @placeholder {
+  <div>Placeholder</div>
+  } @loading () {
+  <div>Cargando...</div>
+  }
 </main>

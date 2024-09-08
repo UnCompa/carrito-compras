@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
-  private http = inject(HttpClient)
-  constructor() { }
+  private apiUrl = "https://dummyjson.com/products";
+  private http = inject(HttpClient);
+  constructor() {}
 
   getProductos<T>() {
-    return this.http.get<T>("https://fakestoreapi.com/products")
+    return this.http.get<T>(this.apiUrl);
   }
 }
